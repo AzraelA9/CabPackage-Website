@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="scripts.js"></script>
+    <title>CabPackage - Taxi Service</title>
+</head>
+<body>
+    <!-- Top Contact Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div>
+                <a href="tel:+919876543210">📞+91 9876543210</a>
+            </div>
+            <div>
+                <a href="mailto:info@cabpackage.com">✉ info@cabpackage.com</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <div class="logo-placeholder">CP</div>
+                <div>
+                    <div class="brand-name">CabPackage</div>
+                    <div class="tagline">Trusted Since YYYY</div>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="taxi_fare.html">Outstation Taxi Fare</a></li>
+                    <li><a href="#destinations">Destinations</a></li>
+                </ul>
+            </nav>
+            <div class="phone-placeholder">WhatsApp</div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero_text_heading">Hire Outstation Taxi Service</h1>
+                <h2 class="hero_text_subheading">Oneway & Round Trip Cabs</h2>
+                <p style="font-size: 18px; margin-top: 20px; margin-bottom: -5px;">Get Best Deals on Outstation Cab</p>
+                <ul>
+                    <li>Outstation Taxi to All India</li>
+                    <li>Hire Santro / Wagon-R at Rs.9.5/KM Only</li>
+                    <li>Dzire / Etios at Rs.10 per KM</li>
+                    <li>Book Innova for Outstation at Rs.16/KM</li>
+                    <li>Largest Outstation Taxi Service</li>
+                    <li>Fair Price, No Hidden Charges</li>
+                </ul>
+            </div>
+            <div class="hero-image">
+                <div class="car-placeholder">
+                    <img src="Img/Hero_Image.png" alt="" class="hero_image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Form -->
+    <div class="booking-form">
+        <div class="tab-buttons">
+            <button class="tab-btn active" onclick="switchTab('round')">Round Trip</button>
+            <button class="tab-btn" onclick="switchTab('oneway')">One Way</button>
+        </div>
+
+        <div id="round-trip" class="tab-content active">
+            <form>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Pickup from:</label>
+                        <input type="text" placeholder="Enter pickup location" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Travelling to:</label>
+                        <input type="text" placeholder="Enter destination" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Mobile no:</label>
+                        <input type="tel" placeholder="10 digit mobile number" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Passengers:</label>
+                        <select required>
+                            <option>--Select--</option>
+                            <option>1 Passenger</option>
+                            <option>2 Passengers</option>
+                            <option>3 Passengers</option>
+                            <option>4 Passengers</option>
+                            <option>5 Passengers</option>
+                            <option>6 Passengers</option>
+                            <option>7 Passengers</option>
+                            <option>More than 7</option>
+                        </select>
+                    </div>
+                </div>
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+
+        <div id="one-way" class="tab-content">
+            <form>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Pickup from:</label>
+                        <input type="text" placeholder="Enter pickup location" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Drop Location:</label>
+                        <input type="text" placeholder="Enter drop location" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Travel Date:</label>
+                        <input type="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Mobile no:</label>
+                        <input type="tel" placeholder="10 digit mobile number" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Passengers:</label>
+                        <select required>
+                            <option>--Select--</option>
+                            <option>1 Passenger</option>
+                            <option>2 Passengers</option>
+                            <option>3 Passengers</option>
+                            <option>4 Passengers</option>
+                            <option>5 Passengers</option>
+                            <option>6 Passengers</option>
+                            <option>7 Passengers</option>
+                            <option>More than 7</option>
+                        </select>
+                    </div>
+                </div>
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Vehicles Section -->
+    <section class="vehicles">
+        <h2 class="section-title">Our Outstation Cabs</h2>
+        <div class="vehicle-grid">
+            <div class="vehicle-card">
+                <div class="vehicle-image">[Wagon-R Image Placeholder]</div>
+                <div class="vehicle-info">
+                    <div class="vehicle-name">Wagon-R/Santro</div>
+                    <div class="vehicle-capacity">Seating - 4 Pax</div>
+                    <div class="vehicle-price">Rs.9.5 per KM</div>
+                </div>
+            </div>
+            <div class="vehicle-card">
+                <div class="vehicle-image">[Dzire Image Placeholder]</div>
+                <div class="vehicle-info">
+                    <div class="vehicle-name">Dzire / Etios</div>
+                    <div class="vehicle-capacity">Seating - 4 Pax</div>
+                    <div class="vehicle-price">Rs.10 per KM</div>
+                </div>
+            </div>
+            <div class="vehicle-card">
+                <div class="vehicle-image">[Venue Image Placeholder]</div>
+                <div class="vehicle-info">
+                    <div class="vehicle-name">Hyundai Venue</div>
+                    <div class="vehicle-capacity">Seating - 5 Pax</div>
+                    <div class="vehicle-price">Rs.13 per KM</div>
+                </div>
+            </div>
+            <div class="vehicle-card">
+                <div class="vehicle-image">[Ertiga Image Placeholder]</div>
+                <div class="vehicle-info">
+                    <div class="vehicle-name">Maruti Ertiga</div>
+                    <div class="vehicle-capacity">Seating - 6+1 Pax</div>
+                    <div class="vehicle-price">Rs.14 per KM</div>
+                </div>
+            </div>
+            <div class="vehicle-card">
+                <div class="vehicle-image">[Carens Image Placeholder]</div>
+                <div class="vehicle-info">
+                    <div class="vehicle-name">Kia Carens</div>
+                    <div class="vehicle-capacity">Seating - 6+1 Pax</div>
+                    <div class="vehicle-price">Rs.16 per KM</div>
+                </div>
+            </div>
+            <div class="vehicle-card">
+                <div class="vehicle-image">[Innova Image Placeholder]</div>
+                <div class="vehicle-info">
+                    <div class="vehicle-name">Innova Crysta</div>
+                    <div class="vehicle-capacity">Seating - 6 Pax</div>
+                    <div class="vehicle-price">Rs.18 per KM</div>
+                </div>
+            </div>
+            <div class="vehicle-card">
+                <div class="vehicle-image">[Tempo Image Placeholder]</div>
+                <div class="vehicle-info">
+                    <div class="vehicle-name">Tempo Traveller</div>
+                    <div class="vehicle-capacity">Seating - 9-12 Pax</div>
+                    <div class="vehicle-price">Rs.25 per KM</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose">
+        <h2 class="section-title">Why Choose us for Outstation Cabs?</h2>
+        <div style="max-width: 800px; margin: 20px auto; text-align: center; color: #666;">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🚗</div>
+                <div class="feature-title">Well Maintained Cabs</div>
+                <div class="feature-desc">Clean and well-maintained cars for long distance journey with proper service records.</div>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">👨‍✈️</div>
+                <div class="feature-title">Experienced Drivers</div>
+                <div class="feature-desc">Professional and trained drivers for safe long route travel with complete route knowledge.</div>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">💻</div>
+                <div class="feature-title">Online Booking</div>
+                <div class="feature-desc">Easy and fast online cab booking with instant confirmation via SMS and email.</div>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">⏰</div>
+                <div class="feature-title">On Time Service</div>
+                <div class="feature-desc">Punctual pickup at scheduled time from your preferred location without any delay.</div>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🧳</div>
+                <div class="feature-title">Extra Luggage Space</div>
+                <div class="feature-desc">Cabs equipped with carrier on top and rope for extra luggage during travel.</div>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">⭐</div>
+                <div class="feature-title">Quality Focused</div>
+                <div class="feature-desc">Customer satisfaction is our priority with quality service and transparent pricing.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <h2 class="section-title">Testimonials</h2>
+        <div style="text-align: center; margin-bottom: 30px;">
+            <div style="display: inline-block; background: #f8f9fa; padding: 15px 30px; border-radius: 5px;">
+                [Reviews Placeholder - Google/TripAdvisor Integration]
+            </div>
+        </div>
+        <div class="testimonial-grid">
+            <div class="testimonial-card">
+                <div class="review-placeholder">👤</div>
+                <div class="reviewer-name">Customer Name</div>
+                <div class="review-route">Location to Destination with Vehicle</div>
+                <div class="review-time">2 weeks ago</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Excellent service and professional driver.</p>
+            </div>
+            <div class="testimonial-card">
+                <div class="review-placeholder">👤</div>
+                <div class="reviewer-name">Customer Name</div>
+                <div class="review-route">Location to Destination with Vehicle</div>
+                <div class="review-time">1 month ago</div>
+                <p>Lorem ipsum dolor sit amet. Great experience with timely pickup and smooth journey throughout.</p>
+            </div>
+            <div class="testimonial-card">
+                <div class="review-placeholder">👤</div>
+                <div class="reviewer-name">Customer Name</div>
+                <div class="review-route">Location to Destination with Vehicle</div>
+                <div class="review-time">4 months ago</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Highly recommended for outstation trips.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About/Description -->
+    <section style="padding: 60px 20px; max-width: 1200px; margin: 0 auto;">
+        <h2 class="section-title">Taxi Service - Trusted & Reliable</h2>
+        <div style="color: #666; line-height: 1.8; text-align: justify;">
+            <p style="margin-bottom: 15px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            
+            <p style="margin-bottom: 15px;">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+            
+            <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p style="color: #ddd; line-height: 1.8;">
+                    CabPackage is a trusted taxi & car rental service provider. We specialize in outstation taxi services and tourist packages across India.
+                </p>
+            </div>
+            <div class="footer-section">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href="#fare">Outstation Taxi Rates</a></li>
+                    <li><a href="#destinations">Popular Destinations</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Top Locations</h3>
+                <ul>
+                    <li><a href="#">Delhi to Shimla</a></li>
+                    <li><a href="#">Delhi to Manali</a></li>
+                    <li><a href="#">Delhi to Nainital</a></li>
+                    <li><a href="#">Delhi to Haridwar</a></li>
+                    <li><a href="#">Delhi to Jaipur</a></li>
+                    <li><a href="#">View All Locations</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <ul>
+                    <li>📞 +91-98765 43210</li>
+                    <li>📧 info@cabpackage.com</li>
+                    <li>🕐 24 Hours Open</li>
+                    <li>🌐 www.cabpackage.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright © (Year to 2026) CabPackage | All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <!-- Floating Action Buttons -->
+    <div class="floating-buttons">
+        <a href="tel:+919876543210" class="float-btn" title="Call Now">📞</a>
+        <a href="https://wa.me/919876543210" class="float-btn" title="WhatsApp" target="_blank">💬</a>
+        <a href="#" class="float-btn" title="Enquiry" onclick="alert('Enquiry form would open here')">✉️</a>
+    </div>
+</body>
+</html>
